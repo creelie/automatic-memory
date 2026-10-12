@@ -44,7 +44,7 @@ the maps p.
 | `checks/c/`, `checks/cpp/` | checks modulo 2^61 - 1 in C and C++, including the values tabulated by Fomichev et al. (`checks/data/`) |
 | `run_all.sh` | runs the Lean build, the axiom check and all programs |
 | `journal/JOURNAL.md` | target journal, format rules and AI policy |
-| `dist/` | the paper PDF, the arXiv tarball and the master zip |
+| `dist/` | the paper PDF, the arXiv tarball and `MasterSl2WeightSystemAtMinus3Over32Zip.zip`, which holds every file of the repository |
 
 ## Lean statement
 
@@ -69,6 +69,11 @@ python3, julia, a C compiler and a C++17 compiler.
     ./run_all.sh --no-lean  # programs only
 
 To build the paper: `cd paper && latexmk -pdf main.tex`.
+
+## Archive
+
+Zenodo, all versions: [10.5281/zenodo.23312529](https://doi.org/10.5281/zenodo.23312529);
+release v1.0.0: [10.5281/zenodo.23312530](https://doi.org/10.5281/zenodo.23312530).
 
 ## License
 
