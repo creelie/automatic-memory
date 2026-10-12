@@ -1,0 +1,94 @@
+\begin{thebibliography}{10}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \def\href#1#2{#2} \def\path#1{#1}\fi
+
+\bibitem{Kon93}
+M.~Kontsevich, Vassiliev's knot invariants, in: I. M. Gel'fand Seminar, Vol.
+  16, Part 2 of Adv. Soviet Math., Amer. Math. Soc., Providence, RI, 1993, pp.
+  137--150.
+\newblock \href {https://doi.org/10.1090/advsov/016.2/04}
+  {\path{doi:10.1090/advsov/016.2/04}}.
+
+\bibitem{BN95}
+D.~Bar-Natan, On the {V}assiliev knot invariants, Topology 34~(2) (1995)
+  423--472.
+\newblock \href {https://doi.org/10.1016/0040-9383(95)93237-2}
+  {\path{doi:10.1016/0040-9383(95)93237-2}}.
+
+\bibitem{CDM12}
+S.~Chmutov, S.~Duzhin, J.~Mostovoy, Introduction to {V}assiliev Knot
+  Invariants, Cambridge University Press, Cambridge, 2012.
+\newblock \href {https://doi.org/10.1017/CBO9781139107846}
+  {\path{doi:10.1017/CBO9781139107846}}.
+
+\bibitem{ChL07}
+S.~Chmutov, S.~Lando, Mutant knots and intersection graphs, Algebr. Geom.
+  Topol. 7~(3) (2007) 1579--1598.
+\newblock \href {https://doi.org/10.2140/agt.2007.7.1579}
+  {\path{doi:10.2140/agt.2007.7.1579}}.
+
+\bibitem{Lan00}
+S.~K. Lando, On a {H}opf algebra in graph theory, J. Combin. Theory Ser. B
+  80~(1) (2000) 104--121.
+\newblock \href {https://doi.org/10.1006/jctb.2000.1973}
+  {\path{doi:10.1006/jctb.2000.1973}}.
+
+\bibitem{KL22}
+M.~E. Kazarian, S.~K. Lando, Weight systems and invariants of graphs and
+  embedded graphs, Russian Math. Surveys 77~(5) (2022) 893--942.
+\newblock \href {https://doi.org/10.4213/rm10054e}
+  {\path{doi:10.4213/rm10054e}}.
+
+\bibitem{Kra21}
+E.~Krasilnikov, An extension of the {$\mathfrak{sl}_2$} weight system to graphs
+  with $n \le 8$ vertices, Arnold Math. J. 7 (2021) 609--618.
+\newblock \href {https://doi.org/10.1007/s40598-021-00187-7}
+  {\path{doi:10.1007/s40598-021-00187-7}}.
+
+\bibitem{FKPU}
+D.~Fomichev, M.~Karev, F.~Pavutnitskiy, S.~Usanov, {$\mathfrak{sl}(2)$}-weight
+  system does not extend to a graph 4-invariant, arXiv:2607.24217, data:
+  \url{https://github.com/fomichev-d/sl2_at_-3_32} (2026).
+
+\bibitem{FK25}
+D.~Fomichev, M.~Karev, The {$\mathfrak{sl}(2)$}-weight system at $c = 3/8$ for
+  graphs, European J. Combin. 127 (2025) 104160.
+\newblock \href {https://doi.org/10.1016/j.ejc.2025.104160}
+  {\path{doi:10.1016/j.ejc.2025.104160}}.
+
+\bibitem{YDJ26}
+Q.~Yan, Q.~Deng, X.~Jin, Proof of a conjecture of {F}omichev and {K}arev,
+  European J. Combin. 135 (2026) 104365.
+\newblock \href {https://doi.org/10.1016/j.ejc.2026.104365}
+  {\path{doi:10.1016/j.ejc.2026.104365}}.
+
+\bibitem{ChV97}
+S.~V. Chmutov, A.~N. Varchenko, Remarks on the {V}assiliev knot invariants
+  coming from {$\mathfrak{sl}_2$}, Topology 36~(1) (1997) 153--178.
+\newblock \href {https://doi.org/10.1016/0040-9383(95)00071-2}
+  {\path{doi:10.1016/0040-9383(95)00071-2}}.
+
+\bibitem{Hum08}
+J.~E. Humphreys, Representations of Semisimple {L}ie Algebras in the {BGG}
+  Category {$\mathcal{O}$}, Vol.~94 of Grad. Stud. Math., Amer. Math. Soc.,
+  Providence, RI, 2008.
+\newblock \href {https://doi.org/10.1090/gsm/094} {\path{doi:10.1090/gsm/094}}.
+
+\bibitem{MU21}
+L.~de~Moura, S.~Ullrich, The {L}ean 4 theorem prover and programming language,
+  in: Automated Deduction -- CADE 28, Vol. 12699 of Lecture Notes in Comput.
+  Sci., Springer, Cham, 2021, pp. 625--635.
+\newblock \href {https://doi.org/10.1007/978-3-030-79876-5_37}
+  {\path{doi:10.1007/978-3-030-79876-5_37}}.
+
+\bibitem{Mathlib20}
+{The mathlib Community}, The {L}ean mathematical library, in: Proceedings of
+  the 9th ACM SIGPLAN International Conference on Certified Programs and
+  Proofs, ACM, New York, 2020, pp. 367--381.
+\newblock \href {https://doi.org/10.1145/3372885.3373824}
+  {\path{doi:10.1145/3372885.3373824}}.
+
+\end{thebibliography}
