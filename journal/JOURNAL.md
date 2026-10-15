@@ -25,19 +25,21 @@ arXiv:2607.24217, with a combinatorial formula for the extension.
 
 ## Length and format
 
-- The manuscript is 16 pages in the `elsarticle` preprint layout (12 pt, single
-  column).
+- The manuscript is 18 pages in the `elsarticle` preprint layout (12 pt, single
+  column), with three figures.
 - Elsevier accepts a first submission as a single PDF; after acceptance the
   LaTeX source, the class file and the `.bib` or `.bbl` file are uploaded. The
   arXiv tarball in `dist/` contains exactly these files.
-- Required front matter, all present: title, author with address and email,
-  abstract, keywords, MSC 2020 codes (05C31, 57K16, 17B10).
+- Required front matter, all present: title, two authors with addresses,
+  emails and ORCID (Deep Bhattacharjee, corresponding author; Ushashi
+  Bhattacharya), abstract, keywords, MSC 2020 codes (Primary 05C31; Secondary
+  57K16, 17B10, 15A66).
 - The journal's guide for authors page returned HTTP 403 to the session that
   prepared this file, so any journal-specific page limit or abstract length
   limit was not read; check the guide before submitting.
-- Editorial Manager asks at submission for a declaration of competing
-  interests and for funding information; these are filled in by the author on
-  the submission form.
+- The paper ends with Data availability, Competing interests (none) and
+  Funding (none); Editorial Manager asks for the same declarations on the
+  submission form.
 
 ## Policy on AI assistance (Elsevier generative AI policy for journals)
 
@@ -47,8 +49,8 @@ arXiv:2607.24217, with a combinatorial formula for the extension.
   manuscript preparation process", placed before the references; the statement
   appears in the published article. Elsevier's recommended wording is used in
   `paper/main.tex`.
-- Use of AI tools in the research process is described in the methods part of
-  the paper; Section 7 (Formal verification) states it.
+- Use of AI tools in the research process is stated in the Data availability
+  section of the paper.
 - The authors remain responsible for checking all AI-generated output,
   including references. Every reference in `paper/refs.bib` was checked against
   its Crossref record (DOI, volume, pages, year) or, for the arXiv preprint,

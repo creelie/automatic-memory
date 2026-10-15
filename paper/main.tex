@@ -4,18 +4,14 @@
 \usepackage{amsmath}
 \usepackage{amsthm}
 \usepackage[utf8]{inputenc}
-\DeclareUnicodeCharacter{03BE}{\ensuremath{\xi}}
-\DeclareUnicodeCharacter{2115}{\ensuremath{\mathbb{N}}}
-\DeclareUnicodeCharacter{211A}{\ensuremath{\mathbb{Q}}}
-\DeclareUnicodeCharacter{2200}{\ensuremath{\forall}}
-\DeclareUnicodeCharacter{2203}{\ensuremath{\exists}}
-\DeclareUnicodeCharacter{2227}{\ensuremath{\wedge}}
-\DeclareUnicodeCharacter{2192}{\ensuremath{\to}}
-\DeclareUnicodeCharacter{2264}{\ensuremath{\le}}
+\usepackage{graphicx}
 \usepackage{xurl}
 \usepackage[hidelinks]{hyperref}
 
 \journal{European Journal of Combinatorics}
+
+\newcommand{\zenodoID}{10.5281/zenodo.0000000}
+\newcommand{\preprintURL}{https://github.com/creelie/automatic-memory/blob/main/preprintSl2WeightSystemAtMinus3Over32/Sl2WeightSystemAtMinus3Over32.pdf}
 
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem{proposition}[theorem]{Proposition}
@@ -46,21 +42,32 @@
 
 \title{The \texorpdfstring{$\mathfrak{sl}(2)$}{sl(2)} weight system at \texorpdfstring{$c=-3/32$}{c=-3/32} extends to a graph 4-invariant}
 
-\author{Deep Bhattacharjee}
+\author[egspl]{Deep Bhattacharjee\corref{cor1}\fnref{orcid1}}
+\ead{itsdeep@live.com}
 \ead{d.bhattacharjee@erl-forschung.de}
-\affiliation{organization={Formerly, Electro-Gravitational Space Propulsion Laboratory (EGSPL)},
+\fntext[orcid1]{ORCID: \url{https://orcid.org/0000-0003-0466-750X}}
+\cortext[cor1]{Corresponding author.}
+\affiliation[egspl]{organization={Formerly, Electro-Gravitational Space Propulsion Laboratory (EGSPL)},
             city={Bhubaneswar},
             postcode={751030},
             state={Odisha},
             country={India}}
 
+\author[ntu]{Ushashi Bhattacharya\fnref{orcid2}}
+\ead{rai.bhattacharya.in@gmail.com}
+\fntext[orcid2]{ORCID: \url{https://orcid.org/0009-0002-2254-3914}}
+\affiliation[ntu]{organization={Formerly, National Taiwan University},
+            city={Taipei},
+            postcode={106319},
+            country={Taiwan}}
+
 \begin{abstract}
-We prove the conjecture of Fomichev, Karev, Pavutnitskiy and Usanov that the specialization of the $\mathfrak{sl}(2)$ weight system at $c=-3/32$ extends to a 4-invariant of graphs. The extension is $\xi(G)=(-32)^{-|V|}S_G(-2)$, where $S_G(N)$ is a signed count of assignments of $2$-element subsets of $\{1,\dots,N\}$ to the vertices of $G$. The proof uses the oscillator representation and is formalized in Lean~4.
+We prove unconditionally the conjecture of Fomichev, Karev, Pavutnitskiy and Usanov that the specialization of the $\mathfrak{sl}(2)$ weight system at $c=-3/32$ extends to a $4$-invariant of graphs. The extension is $\xi(G)=(-32)^{-n}S_G(-2)$, where $S_G(N)$ counts with signs the assignments of $2$-element subsets of $\{1,\dots,N\}$ to the $n$ vertices of $G$.
 \end{abstract}
 
 \begin{keyword}
 weight system \sep intersection graph \sep four-term relation \sep oscillator representation \sep Clifford algebra
-\MSC[2020] 05C31 \sep 57K16 \sep 17B10
+\MSC[2020] Primary 05C31 \sep Secondary 57K16 \sep 17B10 \sep 15A66
 \end{keyword}
 
 \end{frontmatter}
@@ -104,7 +111,19 @@ Parts (b) and (c) are Conjecture~\ref{conj:fkpu}. The two expressions for $\xi$ 
 For one vertex, $S_{K_1}(N)=\binom N2$ and $\xi(K_1)=3/(-32)=-\frac{3}{32}$, the value of $w$ on one chord. Since $S_{G\sqcup H}=S_GS_H$, $\xi$ is multiplicative, as $w$ is. For two adjacent vertices, the pairs $(p(x),p(y))$ with $|p(x)\cap p(y)|=2,1,0$ number $\binom N2$, $\binom N2\cdot 2(N-2)$ and $\binom N2\binom{N-2}{2}$, so $S_{K_2}(N)=\binom N2\bigl(1-2(N-2)+\binom{N-2}{2}\bigr)$ and $\xi(K_2)=3\cdot19/1024=\frac{57}{1024}$. This is $c(c-\frac12)$ at $c=-\frac{3}{32}$, the value of $w$ on two crossing chords.
 \end{example}
 
-The proof of (b) is an involution on assignments (Section~\ref{sec:proof}). For (c) we let the element $C_D\in U(\slt)$ of a chord diagram act on the Verma module of highest weight $\mu$; it acts by a polynomial $\lambda_D(\mu)$, and $w_D(-\frac{3}{32})=\lambda_D(-\frac12)$ (Section~\ref{sec:verma}). The oscillator representation on $\Q[z]$ is the sum of the Verma modules of highest weights $-\frac12$ and $-\frac32$, so the image of $C_D$ in the Weyl algebra is the scalar $\lambda_D(-\frac12)$. A supertrace on the Weyl algebra with a Wick formula writes this scalar as a sum over perfect matchings, in which every cycle contributes a factor $-2$ (Sections~\ref{sec:osc} and~\ref{sec:matching}). With $N$ in place of $-2$ the same sum is a trace in the Clifford algebra on $N$ generators, and that trace equals $4^nS_\Gamma(N)$ (Section~\ref{sec:clifford}). The proof is formalized in Lean~4 (Section~\ref{sec:lean}).
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.92\textwidth]{figures/fig_chords.png}
+\caption{A chord diagram with three chords, cut between the points $6$ and $1$, and its intersection graph, a path. The map $p$ sends each vertex to a $2$-element subset of $[3]$; both edges meet in one element, so $p$ contributes $(-1)(-1)=1$ to $S_{\Gamma(D)}(3)$.}\label{fig:chords}
+\end{figure}
+
+The proof of (b) is an involution on assignments (Section~\ref{sec:proof}). For (c) we let the element $C_D\in U(\slt)$ of a chord diagram act on the Verma module of highest weight $\mu$; it acts by a polynomial $\lambda_D(\mu)$, and $w_D(-\frac{3}{32})=\lambda_D(-\frac12)$ (Section~\ref{sec:verma}). The oscillator representation on $\Q[z]$ is the sum of the Verma modules of highest weights $-\frac12$ and $-\frac32$, so the image of $C_D$ in the Weyl algebra is the scalar $\lambda_D(-\frac12)$. A supertrace on the Weyl algebra with a Wick formula writes this scalar as a sum over perfect matchings, in which every cycle contributes a factor $-2$ (Sections~\ref{sec:osc} and~\ref{sec:matching}). With $N$ in place of $-2$ the same sum is a trace in the Clifford algebra on $N$ generators, and that trace equals $4^nS_\Gamma(N)$ (Section~\ref{sec:clifford}). Figure~\ref{fig:flow} shows the two halves of the argument. The proof is formalized in Lean~4 (Section~\ref{sec:lean}).
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.9\textwidth]{figures/fig_flow.png}
+\caption{The proof of Theorem~\ref{thm:main}. The right column gives part (b), the left column and the bottom row part (c).}\label{fig:flow}
+\end{figure}
 
 \section{The weight system and Verma modules}\label{sec:verma}
 
@@ -381,8 +400,15 @@ w_D(-\tfrac{3}{32})&=\Bigl(-\frac{1}{32}\Bigr)^n\sum_\beta\tau(X_{P_\beta})=\Big
 
 For a graph $G$ and distinct vertices $a,b$ let $G'_{ab}$ be $G$ with the adjacency of $a$ and $b$ reversed, and $\widetilde G_{ab}$ be $G$ with the adjacency of $a$ and $y$ reversed for every neighbour $y\ne a$ of $b$. The four-term relation for a function $f$ on graphs is
 \[
-f(G)-f(G'_{ab})=f(\widetilde G_{ab})-f(\widetilde G'_{ab}),\qquad \widetilde G'_{ab}=(\widetilde G_{ab})'_{ab}.
+f(G)-f(G'_{ab})=f(\widetilde G_{ab})-f(\widetilde G'_{ab}),\qquad \widetilde G'_{ab}=(\widetilde G_{ab})'_{ab},
 \]
+as in Figure~\ref{fig:fourterm}.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=\textwidth]{figures/fig_fourterm.png}
+\caption{The four graphs of a four-term relation. Here $b$ has the neighbours $a,y_1,y_2$; passing from $G$ to $\widetilde G_{ab}$ removes the edge $ay_1$ (dashed) and adds the edge $ay_2$.}\label{fig:fourterm}
+\end{figure}
 
 \begin{proposition}\label{prop:fourT}
 For every $N\in\N$, $G\mapsto S_G(N)$ satisfies the four-term relation.
@@ -415,27 +441,25 @@ Proposition~\ref{prop:fourT} applied to the sets $\Pi$ restricted to the maps wi
 
 \section{Formal verification}\label{sec:lean}
 
-Theorem~\ref{thm:main}(b), (c) is formalized in Lean~4 \cite{MU21} with Mathlib \cite{Mathlib20} (Lean and Mathlib version~4.34.1). The source, sixteen files with $4120$ lines, is in the directory \texttt{lean} of the archive described under Data availability. The definitions in \texttt{SL2W/Defs.lean} follow Section~\ref{sec:verma}: a chord diagram is a fixed-point-free involution of $\{0,\dots,2n-1\}$; \texttt{casimirWord} places the coefficients of $t$ on the chords; \texttt{sl2Rep d} gives the matrices of $E,F,H$ on $V_d$ in the basis above; \texttt{W d D} is $\tr_{V_d}(C_D)/d$; \texttt{interGraph} is $\Gamma(D)$; \texttt{toggle} and \texttt{tilde} are $G'_{ab}$ and $\widetilde G_{ab}$; \texttt{T} and $\xi$ are as in Definition~\ref{def:S} and Theorem~\ref{thm:main}. The main theorem reads:
-\begin{verbatim}
-theorem main_theorem : IsFourInvariant (fun G => ξ G) ∧
-    ∀ (n : ℕ) (D : ChordDiagram n),
-    (∃ P : Polynomial ℚ, ∀ d : ℕ, 1 ≤ d →
-        P.eval (((d : ℚ) ^ 2 - 1) / 8) = W d D) ∧
-    ∀ P : Polynomial ℚ, (∀ d : ℕ, 1 ≤ d →
-        P.eval (((d : ℚ) ^ 2 - 1) / 8) = W d D) →
-      P.eval (-3 / 32) = ξ D.interGraph
-\end{verbatim}
-Here \texttt{IsFourInvariant f} states that $f$ is invariant under graph isomorphisms and satisfies the four-term relation for all distinct $a,b$. The second conjunct says that $w_D$ exists and that every polynomial with the values $W_d(D)$ at $c_d$, that is $w_D$, takes the value $\xi(\Gamma(D))$ at $-\frac{3}{32}$. The command \texttt{lake build} compiles the project, and \verb|#print axioms SL2W.main_theorem| reports \texttt{propext}, \texttt{Classical.choice} and \texttt{Quot.sound}, the axioms of Lean's logic; there is no \texttt{sorry} and no added axiom.
+Parts (b) and (c) of Theorem~\ref{thm:main} are formalized in Lean~4 \cite{MU21} with Mathlib \cite{Mathlib20}, version~4.34.1, and the formal proof is checked by the Lean kernel. The formal statement has two parts. The first says that $\xi$ is invariant under isomorphisms of graphs and satisfies the four-term relation for every graph and every pair of distinct vertices $a,b$. The second says that for every chord diagram $D$ there is a polynomial $P\in\Q[c]$ with $P(c_d)=W_d(D)$ for all $d\ge1$, and that every such polynomial, that is $w_D$, takes the value $\xi(\Gamma(D))$ at $c=-\frac{3}{32}$. A chord diagram is a fixed-point-free involution of $\{0,\dots,2n-1\}$, the trace $W_d(D)$ is computed from the matrices of $E,F,H$ on $V_d$ in the basis of Section~\ref{sec:verma}, and $\Gamma(D)$, $G'_{ab}$, $\widetilde G_{ab}$, $T_k$ and $\xi$ are as in Sections~\ref{sec:intro} and~\ref{sec:proof}. The proof depends only on the axioms of Lean's logic, namely propositional extensionality, choice and the soundness of quotients; it has no unproved step and adds no axiom.
 
 The formal proof follows Sections~\ref{sec:verma}--\ref{sec:proof} with three changes of route. Proposition~\ref{prop:lambda}(b) is derived from an identity between the coefficients of words acting on the Verma modules of highest weights $\mu$ and $-2-\mu$, which is the isomorphism $V(-1-d)\cong U_d$ in coordinates. The identity $W_d(D)=\lambda_D(d-1)$ is proved by expanding matrix entries of words over paths. The sums over matchings are encoded by a loop polynomial of a word in which every label occurs twice, defined by contracting the first label; the bosonic expansion (Proposition~\ref{prop:boson}) and the Clifford colour sum (Corollary~\ref{cor:colour}, with the Clifford trace realized as $(-1)$ to the number of inversions of a word in which every letter occurs an even number of times) are shown to satisfy the same recursion, which replaces Lemma~\ref{lem:sign}.
 
-The archive also contains independent checks. In exact rational arithmetic, Python and Julia programs compare $w_D(-\frac{3}{32})$, obtained by interpolating $W_d(D)$, $d\le n+1$, with $\xi(\Gamma(D))$ on all chord diagrams with at most $5$ (Python) and $4$ (Julia) chords and on random larger ones, and check the four-term relation on all graphs with at most $4$ vertices. A second Python program checks each identity of Sections~\ref{sec:osc}--\ref{sec:clifford} on small cases. Programs in C and C++, computing modulo $2^{61}-1$, compare $w_D(-\frac{3}{32})$ with $\xi(\Gamma(D))$ on all $11465$ chord diagrams with at most $6$ chords and on $400$ random diagrams with $7$ and $8$ chords, check the four-term relation on all graphs with at most $5$ vertices, and reproduce the values of the extension tabulated in \cite{FKPU} on $63$ graphs with $9$ and $10$ vertices. A shell script runs the Lean build, the axiom check and all programs. The proof, the formalization and the programs were developed with Claude Code (Anthropic); see the declaration below.
+Independent computations confirm the theorem on small cases. In exact rational arithmetic, $w_D(-\frac{3}{32})$, obtained by interpolating $W_d(D)$ for $d\le n+1$, agrees with $\xi(\Gamma(D))$ on all chord diagrams with at most $5$ chords and on random larger ones, the four-term relation holds on all graphs with at most $4$ vertices, and each identity of Sections~\ref{sec:osc}--\ref{sec:clifford} holds on small cases. Modulo the prime $2^{61}-1$, the two sides agree on all $11465$ chord diagrams with at most $6$ chords and on $400$ random diagrams with $7$ and $8$ chords, the four-term relation holds on all graphs with at most $5$ vertices, and $\xi$ reproduces the values of the extension tabulated in \cite{FKPU} on $63$ graphs with $9$ and $10$ vertices.
 
 \section*{Declaration of generative AI and AI-assisted technologies in the manuscript preparation process}
-During the preparation of this work the author used Claude Code (Anthropic) in order to develop the proof, write the Lean formalization and the verification programs, and draft the manuscript. After using this tool, the author reviewed and edited the content as needed and takes full responsibility for the content of the published article.
+During the preparation of this work the authors used Claude (Anthropic) in order to assist with the Lean formalization, the computations and the preparation of the manuscript. After using this tool, the authors reviewed and edited the content as needed and take full responsibility for the content of the published article.
 
 \section*{Data availability}
-The repository \mbox{\url{https://github.com/creelie/automatic-memory}} contains the Lean~4 formalization, the verification programs and the shell script that runs them. It is archived on Zenodo under \href{https://doi.org/10.5281/zenodo.23312529}{doi:10.5281/zenodo.23312529} (all versions; release v1.0.0 is \href{https://doi.org/10.5281/zenodo.23312530}{doi:10.5281/zenodo.23312530}).
+\begingroup\raggedright
+Deep Bhattacharjee computed the Lean formalization and the Julia, C, C++, shell and Python computations with the help of AI assistance (Claude, Anthropic). The Lean formalization of the proofs in this paper is archived at Zenodo, doi:\href{https://doi.org/\zenodoID}{\zenodoID}. The paper is available at \url{\preprintURL}.\par
+\endgroup
+
+\section*{Competing interests}
+None.
+
+\section*{Funding}
+None.
 
 \bibliographystyle{elsarticle-num}
 \bibliography{refs}

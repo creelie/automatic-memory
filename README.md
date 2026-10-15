@@ -1,12 +1,25 @@
 # The sl(2) weight system at c = -3/32 extends to a graph 4-invariant
 
-Author: Deep Bhattacharjee (ORCID 0000-0003-0466-750X).
+**Deep Bhattacharjee** (corresponding author), Formerly, Electro-Gravitational
+Space Propulsion Laboratory (EGSPL), Bhubaneswar, Odisha 751030, India
+(itsdeep@live.com, d.bhattacharjee@erl-forschung.de;
+ORCID [0000-0003-0466-750X](https://orcid.org/0000-0003-0466-750X))
 
-This repository proves the conjecture of Fomichev, Karev, Pavutnitskiy and
-Usanov ([arXiv:2607.24217](https://arxiv.org/abs/2607.24217), Section 4):
+**Ushashi Bhattacharya**, Formerly, National Taiwan University, Taipei 106319,
+Taiwan (rai.bhattacharya.in@gmail.com;
+ORCID [0009-0002-2254-3914](https://orcid.org/0009-0002-2254-3914))
+
+The paper proves the conjecture of Fomichev, Karev, Pavutnitskiy and Usanov
+([arXiv:2607.24217](https://arxiv.org/abs/2607.24217), Section 4):
 
 > The specialization of the sl(2)-weight system at c = -3/32 extends to a
 > 4-invariant of graphs.
+
+- Paper: [`preprintSl2WeightSystemAtMinus3Over32/Sl2WeightSystemAtMinus3Over32.pdf`](preprintSl2WeightSystemAtMinus3Over32/Sl2WeightSystemAtMinus3Over32.pdf)
+- Lean 4 formalization on Zenodo, all versions: doi:[10.5281/zenodo.23312529](https://doi.org/10.5281/zenodo.23312529)
+- Master zip: [`MasterSl2WeightSystemAtMinus3Over32_masterzipfinal2.zip`](https://github.com/creelie/automatic-memory/raw/main/MasterSl2WeightSystemAtMinus3Over32_masterzipfinal2.zip)
+- Target journal: European Journal of Combinatorics (`journal/JOURNAL.md`)
+- MSC 2020: Primary 05C31; Secondary 57K16, 17B10, 15A66
 
 ## Result
 
@@ -37,14 +50,19 @@ the maps p.
 
 | Path | Contents |
 |---|---|
-| `paper/` | LaTeX source (`main.tex`, `refs.bib`, Elsevier `elsarticle` class and style) and the compiled `main.pdf` |
+| `preprintSl2WeightSystemAtMinus3Over32/` | the paper as a PDF, the only file in the folder |
+| `paper/` | LaTeX source (`main.tex`, `refs.bib`, `main.bbl`, Elsevier `elsarticle` class and style) and the figures as PNG in `paper/figures/` |
+| `figures/` | TikZ sources of the three figures and `make_figures.sh`, which writes the PNG files |
+| `dist/` | the paper (`Sl2WeightSystemAtMinus3Over32_final2.pdf`), the LaTeX source zip with the figures as PNG (`..._final2-tex.zip`) and the arXiv tarball (`..._final2-arxiv.tar.gz`) |
+| `MasterSl2WeightSystemAtMinus3Over32_masterzipfinal2.zip` | every file of the repository with `dist/` and the preprint folder |
 | `lean/` | Lean 4 + Mathlib formalization (16 files, 4120 lines); `SL2W/Main.lean` holds `SL2W.main_theorem` |
 | `checks/python/` | `check.py`: exact check of the theorem; `proof_steps.py`: exact check of every intermediate identity of the proof |
 | `checks/julia/` | exact check in Julia |
 | `checks/c/`, `checks/cpp/` | checks modulo 2^61 - 1 in C and C++, including the values tabulated by Fomichev et al. (`checks/data/`) |
 | `run_all.sh` | runs the Lean build, the axiom check and all programs |
+| `make_dist.sh` | builds the paper, `dist/`, the preprint folder and the master zip |
 | `journal/JOURNAL.md` | target journal, format rules and AI policy |
-| `dist/` | the paper PDF, the arXiv tarball and `MasterSl2WeightSystemAtMinus3Over32Zip.zip`, which holds every file of the repository |
+| `.github/workflows/release.yml` | runs every check, Lean included, and publishes a release |
 
 ## Lean statement
 
@@ -68,13 +86,18 @@ python3, julia, a C compiler and a C++17 compiler.
     ./run_all.sh            # Lean build (with the Mathlib cache), axiom check, all programs
     ./run_all.sh --no-lean  # programs only
 
-To build the paper: `cd paper && latexmk -pdf main.tex`.
+To build the paper and the release files: `./make_dist.sh` (needs latexmk,
+zip and tar; `figures/make_figures.sh` redraws the figures).
 
 ## Archive
 
-Zenodo, all versions: [10.5281/zenodo.23312529](https://doi.org/10.5281/zenodo.23312529);
-release v1.0.0: [10.5281/zenodo.23312530](https://doi.org/10.5281/zenodo.23312530).
+Release v2.0.0 adds the second author and the journal format; its Zenodo DOI
+is recorded here once minted. Earlier release v1.0.0:
+[10.5281/zenodo.23312530](https://doi.org/10.5281/zenodo.23312530); all
+versions: [10.5281/zenodo.23312529](https://doi.org/10.5281/zenodo.23312529).
 
 ## License
 
-MIT, see `LICENSE`.
+The code is under the MIT license (`LICENSE`), copyright Deep Bhattacharjee.
+The paper in `paper/` and the preprint folder is by Deep Bhattacharjee and
+Ushashi Bhattacharya.
