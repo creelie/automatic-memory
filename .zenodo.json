@@ -1,13 +1,17 @@
 {
-  "title": "The sl(2) weight system at c = -3/32 extends to a graph 4-invariant: paper, Lean 4 formalization and verification code",
-  "description": "<p>Proof of the conjecture of Fomichev, Karev, Pavutnitskiy and Usanov (arXiv:2607.24217, Section 4) that the specialization of the sl(2) weight system at c = -3/32 extends to a 4-invariant of graphs. The extension is xi(G) = (-32)^{-n} S_G(-2), where S_G(N) is the signed count of assignments of 2-element subsets of {1,...,N} to the n vertices of G, with sign (-1)^{|p(x) ∩ p(y)|} on each edge xy.</p><p><code>paper/</code> holds the LaTeX source in the Elsevier elsarticle template and the compiled PDF; <code>dist/</code> holds the PDF, the arXiv tarball and <code>MasterSl2WeightSystemAtMinus3Over32Zip.zip</code> with every file of the repository. <code>lean/</code> is a Lean 4 and Mathlib formalization of the theorem (16 files); <code>SL2W.main_theorem</code> depends only on the axioms propext, Classical.choice and Quot.sound. <code>checks/</code> contains independent checks in Python and Julia (exact rational arithmetic) and in C and C++ (arithmetic modulo 2^61 - 1), including a comparison with the values tabulated by Fomichev et al., and <code>run_all.sh</code> runs the Lean build, the axiom check and all programs.</p>",
+  "title": "The sl(2) weight system at c = -3/32 extends to a graph 4-invariant: Lean 4 formalization and verification code",
   "upload_type": "software",
-  "license": "mit",
-  "access_right": "open",
+  "description": "<p>Lean 4 formalization of the paper <em>The sl(2) weight system at c = -3/32 extends to a graph 4-invariant</em> by Deep Bhattacharjee and Ushashi Bhattacharya, with the LaTeX source, the paper as a PDF, and independent checks in Python, Julia, C and C++.</p><p>The paper proves the conjecture of Fomichev, Karev, Pavutnitskiy and Usanov (arXiv:2607.24217, Section 4) that the specialization of the sl(2) weight system at c = -3/32 extends to a 4-invariant of graphs. The extension is xi(G) = (-32)^{-n} S_G(-2), where S_G(N) is the signed count of assignments of 2-element subsets of {1,...,N} to the n vertices of G, with sign (-1)^{|p(x) ∩ p(y)|} on each edge xy. The Lean theorem SL2W.main_theorem states both parts of the conjecture and depends only on the axioms propext, Classical.choice and Quot.sound.</p>",
   "creators": [
     {
       "name": "Bhattacharjee, Deep",
+      "affiliation": "Formerly, Electro-Gravitational Space Propulsion Laboratory (EGSPL), Bhubaneswar, Odisha 751030, India",
       "orcid": "0000-0003-0466-750X"
+    },
+    {
+      "name": "Bhattacharya, Ushashi",
+      "affiliation": "Formerly, National Taiwan University, Taipei 106319, Taiwan",
+      "orcid": "0009-0002-2254-3914"
     }
   ],
   "keywords": [
@@ -19,12 +23,12 @@
     "Clifford algebra",
     "Lean 4"
   ],
+  "license": "MIT",
   "related_identifiers": [
     {
       "identifier": "arXiv:2607.24217",
       "relation": "references",
       "scheme": "arxiv"
     }
-  ],
-  "language": "eng"
+  ]
 }
