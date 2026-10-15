@@ -15,7 +15,14 @@ authors:
 type: software
 license: MIT
 repository-code: "https://github.com/creelie/automatic-memory"
-doi: 10.5281/zenodo.23312529
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.23312529
+    description: All versions on Zenodo
+  - type: doi
+    value: 10.5281/zenodo.23384025
+    description: Release v2.0.0
+doi: 10.5281/zenodo.23384025
 version: 2.0.0
 date-released: 2026-10-15
 keywords:

@@ -16,7 +16,7 @@ The paper proves the conjecture of Fomichev, Karev, Pavutnitskiy and Usanov
 > 4-invariant of graphs.
 
 - Paper: [`preprintSl2WeightSystemAtMinus3Over32/Sl2WeightSystemAtMinus3Over32.pdf`](preprintSl2WeightSystemAtMinus3Over32/Sl2WeightSystemAtMinus3Over32.pdf)
-- Lean 4 formalization on Zenodo, all versions: doi:[10.5281/zenodo.23312529](https://doi.org/10.5281/zenodo.23312529)
+- Lean 4 formalization on Zenodo (release v2.0.0): doi:[10.5281/zenodo.23384025](https://doi.org/10.5281/zenodo.23384025); all versions: doi:[10.5281/zenodo.23312529](https://doi.org/10.5281/zenodo.23312529)
 - Master zip: [`MasterSl2WeightSystemAtMinus3Over32_masterzipfinal2.zip`](https://github.com/creelie/automatic-memory/raw/main/MasterSl2WeightSystemAtMinus3Over32_masterzipfinal2.zip)
 - Target journal: European Journal of Combinatorics (`journal/JOURNAL.md`)
 - MSC 2020: Primary 05C31; Secondary 57K16, 17B10, 15A66
@@ -91,10 +91,12 @@ zip and tar; `figures/make_figures.sh` redraws the figures).
 
 ## Archive
 
-Release v2.0.0 adds the second author and the journal format; its Zenodo DOI
-is recorded here once minted. Earlier release v1.0.0:
-[10.5281/zenodo.23312530](https://doi.org/10.5281/zenodo.23312530); all
-versions: [10.5281/zenodo.23312529](https://doi.org/10.5281/zenodo.23312529).
+| Release | Zenodo DOI |
+|---|---|
+| v2.0.0 (two authors, journal format; cited by the paper) | [10.5281/zenodo.23384025](https://doi.org/10.5281/zenodo.23384025) |
+| v1.0.1 | [10.5281/zenodo.23312664](https://doi.org/10.5281/zenodo.23312664) |
+| v1.0.0 | [10.5281/zenodo.23312530](https://doi.org/10.5281/zenodo.23312530) |
+| all versions | [10.5281/zenodo.23312529](https://doi.org/10.5281/zenodo.23312529) |
 
 ## License
 
