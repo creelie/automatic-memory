@@ -1,7 +1,9 @@
 # The sl(2) weight system at c = -3/32 extends to a graph 4-invariant
 
 **Deep Bhattacharjee** (corresponding author), Formerly, Electro-Gravitational
-Space Propulsion Laboratory (EGSPL), Bhubaneswar, Odisha 751030, India
+Space Propulsion Laboratory (EGSPL), Bhubaneswar, Odisha 751030, India, and
+Formerly, University of Calcutta, Senate House, 87/1 College Street, Kolkata
+700073, West Bengal, India
 (itsdeep@live.com, d.bhattacharjee@erl-forschung.de;
 ORCID [0000-0003-0466-750X](https://orcid.org/0000-0003-0466-750X))
 

@@ -28,8 +28,10 @@ arXiv:2607.24217, with a combinatorial formula for the extension.
 - The manuscript is 18 pages in the `elsarticle` preprint layout (12 pt, single
   column), with three figures.
 - Elsevier accepts a first submission as a single PDF; after acceptance the
-  LaTeX source, the class file and the `.bib` or `.bbl` file are uploaded. The
-  arXiv tarball in `dist/` contains exactly these files.
+  LaTeX source and the class file are uploaded. The references are in
+  `main.tex` itself, so no `.bib` or `.bbl` file is needed; the tex zip and the
+  arXiv tarball in `dist/` contain `main.tex`, `elsarticle.cls` and the PNG
+  figures, and compile with `latexmk -pdf main.tex` without a BibTeX pass.
 - Required front matter, all present: title, two authors with addresses,
   emails and ORCID (Deep Bhattacharjee, corresponding author; Ushashi
   Bhattacharya), abstract, keywords, MSC 2020 codes (Primary 05C31; Secondary
@@ -37,22 +39,28 @@ arXiv:2607.24217, with a combinatorial formula for the extension.
 - The journal's guide for authors page returned HTTP 403 to the session that
   prepared this file, so any journal-specific page limit or abstract length
   limit was not read; check the guide before submitting.
-- The paper ends with Data availability, Competing interests (none) and
-  Funding (none); Editorial Manager asks for the same declarations on the
-  submission form.
+- The paper ends with "Data and code availability" (the Zenodo DOI, the link
+  to the PDF, who did what, with the AI assistance named there) and "Ethical
+  declarations" (Funding: none. Competing interests: none); Editorial Manager
+  asks for the same declarations on the submission form.
+- Three self-citations, each verified on Crossref, in footnotes tied to the
+  places where they bear on the text: 10.9734/arjom/2022/v18i11615
+  (hyperbolic knot groups), 10.20944/preprints202606.1351.v2 (intersection
+  patterns of set families, with Ushashi Bhattacharya) and
+  10.9734/arjom/2022/v18i11607 (non-commutativity).
 
 ## Policy on AI assistance (Elsevier generative AI policy for journals)
 
 - AI tools may not be listed as authors or cited as authors.
-- Use of AI tools in manuscript preparation is disclosed in a separate section
-  titled "Declaration of generative AI and AI-assisted technologies in the
-  manuscript preparation process", placed before the references; the statement
-  appears in the published article. Elsevier's recommended wording is used in
-  `paper/main.tex`.
+- Use of AI tools in manuscript preparation must be disclosed; the paper
+  discloses it in "Data and code availability". If the journal asks for its
+  separate section "Declaration of generative AI and AI-assisted technologies
+  in the manuscript preparation process", add it before the references at
+  submission with Elsevier's recommended wording.
 - Use of AI tools in the research process is stated in the Data availability
   section of the paper.
 - The authors remain responsible for checking all AI-generated output,
-  including references. Every reference in `paper/refs.bib` was checked against
+  including references. Every reference in `paper/main.tex` was checked against
   its Crossref record (DOI, volume, pages, year) or, for the arXiv preprint,
   against the arXiv source.
 - Source: https://www.elsevier.com/about/policies-and-standards/generative-ai-policies-for-journals
