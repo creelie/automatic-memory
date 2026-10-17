@@ -31,11 +31,11 @@ trap 'rm -rf "$tmp"' EXIT
 
 src="$tmp/${name}_final2-tex"
 mkdir -p "$src/figures"
-cp paper/main.tex paper/main.bbl paper/refs.bib paper/elsarticle.cls paper/elsarticle-num.bst "$src/"
+cp paper/main.tex paper/elsarticle.cls "$src/"
 cp paper/figures/*.png "$src/figures/"
 (cd "$tmp" && zip -qr -X "${name}_final2-tex.zip" "${name}_final2-tex")
 mv "$tmp/${name}_final2-tex.zip" dist/
-tar -czf "dist/${name}_final2-arxiv.tar.gz" -C "$src" main.tex main.bbl refs.bib elsarticle.cls elsarticle-num.bst figures
+tar -czf "dist/${name}_final2-arxiv.tar.gz" -C "$src" main.tex elsarticle.cls figures
 
 mkdir "$tmp/Master${name}"
 git ls-files -z | grep -zvE "^(dist/|${pre}/|${master}$)" \
