@@ -7,7 +7,7 @@ India) and Ushashi Bhattacharya (ORCID 0009-0002-2254-3914; formerly National
 Taiwan University, Taipei 106319, Taiwan).
 
 - Paper: https://github.com/creelie/automatic-memory/blob/main/preprintSl2WeightSystemAtMinus3Over32/Sl2WeightSystemAtMinus3Over32.pdf
-- Lean formalization and code: doi:10.5281/zenodo.23384025 (release v2.0.0; all versions doi:10.5281/zenodo.23312529)
+- Lean formalization and code: release v2.1.0, https://github.com/creelie/automatic-memory/releases/tag/v2.1.0
 - Repository: https://github.com/creelie/automatic-memory
 
 ## Result
@@ -36,7 +36,7 @@ Claude Code under his direction, produced the following:
 - the checking programs in Python, Julia, C and C++;
 - the figures;
 - the LaTeX text of the paper, its footnotes and its reference list (every
-  reference, the three self-citations included, was checked against the
+  reference was checked against the
   publisher's or Crossref's record);
 - this file and the submission notes.
 
