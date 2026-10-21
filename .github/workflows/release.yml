@@ -3,15 +3,15 @@ name: release
 # Run by hand from the Actions tab (or the API) after the PR is merged. It builds the Lean
 # formalization (with the Mathlib cache), checks its axioms, runs the Python, Julia, C and C++
 # checks, then publishes a GitHub release with the paper files in dist/ and the notes in
-# .github/RELEASE_NOTES.md. Zenodo archives the release and mints a DOI.
+# .github/RELEASE_NOTES.md.
 
 on:
   workflow_dispatch:
     inputs:
       tag:
-        description: "Release tag, e.g. v2.0.0"
+        description: "Release tag, e.g. v2.1.0"
         required: true
-        default: "v2.0.0"
+        default: "v2.1.0"
       target:
         description: "Branch or commit to tag"
         required: true

@@ -18,7 +18,8 @@ The paper proves the conjecture of Fomichev, Karev, Pavutnitskiy and Usanov
 > 4-invariant of graphs.
 
 - Paper: [`preprintSl2WeightSystemAtMinus3Over32/Sl2WeightSystemAtMinus3Over32.pdf`](preprintSl2WeightSystemAtMinus3Over32/Sl2WeightSystemAtMinus3Over32.pdf)
-- Lean 4 formalization on Zenodo (release v2.0.0): doi:[10.5281/zenodo.23384025](https://doi.org/10.5281/zenodo.23384025); all versions: doi:[10.5281/zenodo.23312529](https://doi.org/10.5281/zenodo.23312529)
+- Release cited by the paper: [v2.1.0](https://github.com/creelie/automatic-memory/releases/tag/v2.1.0) (paper, LaTeX source, Lean 4 formalization and check programs)
+- Journal version: [`paper/paper1/`](paper/paper1/) (PDF) and [`paper/paper2/`](paper/paper2/) (LaTeX source zip)
 - Master zip: [`MasterSl2WeightSystemAtMinus3Over32_masterzipfinal2.zip`](https://github.com/creelie/automatic-memory/raw/main/MasterSl2WeightSystemAtMinus3Over32_masterzipfinal2.zip)
 - Target journal: European Journal of Combinatorics (`journal/JOURNAL.md`)
 - MSC 2020: Primary 05C31; Secondary 57K16, 17B10, 15A66
@@ -53,7 +54,7 @@ the maps p.
 | Path | Contents |
 |---|---|
 | `preprintSl2WeightSystemAtMinus3Over32/` | the paper as a PDF, the only file in the folder |
-| `paper/` | LaTeX source (`main.tex`, `refs.bib`, `main.bbl`, Elsevier `elsarticle` class and style) and the figures as PNG in `paper/figures/` |
+| `paper/` | LaTeX source (`main.tex` with the references inline, Elsevier `elsarticle` class) and the figures as PNG in `paper/figures/`; `paper/paper1/` holds the journal PDF and `paper/paper2/` the LaTeX source zip |
 | `figures/` | TikZ sources of the three figures and `make_figures.sh`, which writes the PNG files |
 | `dist/` | the paper (`Sl2WeightSystemAtMinus3Over32_final2.pdf`), the LaTeX source zip with the figures as PNG (`..._final2-tex.zip`) and the arXiv tarball (`..._final2-arxiv.tar.gz`) |
 | `MasterSl2WeightSystemAtMinus3Over32_masterzipfinal2.zip` | every file of the repository with `dist/` and the preprint folder |
@@ -93,12 +94,12 @@ zip and tar; `figures/make_figures.sh` redraws the figures).
 
 ## Archive
 
-| Release | Zenodo DOI |
+| Release | Link |
 |---|---|
-| v2.0.0 (two authors, journal format; cited by the paper) | [10.5281/zenodo.23384025](https://doi.org/10.5281/zenodo.23384025) |
-| v1.0.1 | [10.5281/zenodo.23312664](https://doi.org/10.5281/zenodo.23312664) |
-| v1.0.0 | [10.5281/zenodo.23312530](https://doi.org/10.5281/zenodo.23312530) |
-| all versions | [10.5281/zenodo.23312529](https://doi.org/10.5281/zenodo.23312529) |
+| v2.1.0 (journal version; cited by the paper) | [https://github.com/creelie/automatic-memory/releases/tag/v2.1.0](https://github.com/creelie/automatic-memory/releases/tag/v2.1.0) |
+| v2.0.0 | [https://github.com/creelie/automatic-memory/releases/tag/v2.0.0](https://github.com/creelie/automatic-memory/releases/tag/v2.0.0) |
+| v1.0.1 | [https://github.com/creelie/automatic-memory/releases/tag/v1.0.1](https://github.com/creelie/automatic-memory/releases/tag/v1.0.1) |
+| v1.0.0 | [https://github.com/creelie/automatic-memory/releases/tag/v1.0.0](https://github.com/creelie/automatic-memory/releases/tag/v1.0.0) |
 
 ## License
 

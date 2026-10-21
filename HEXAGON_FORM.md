@@ -19,13 +19,13 @@ Provenance statement: The proofs, the text, the figures, the Lean 4 formalizatio
 
 Tools used: Anthropic - Claude (Claude Code); Lean community - Lean 4 (v4.34.1) with Mathlib; Python; Julia; C; C++; shell.
 arXiv identifier: none (not posted on arXiv).
-Formalization: https://github.com/creelie/automatic-memory/blob/main/lean/SL2W/Main.lean (archived at Zenodo, release v2.0.0: https://doi.org/10.5281/zenodo.23384025)
+Formalization: https://github.com/creelie/automatic-memory/blob/main/lean/SL2W/Main.lean (release v2.1.0: https://github.com/creelie/automatic-memory/releases/tag/v2.1.0)
 
 Source files or ZIP: Sl2WeightSystemAtMinus3Over32_final2-tex.zip (the folder Sl2WeightSystemAtMinus3Over32_final2-tex/ with main.tex, elsarticle.cls and figures/ as PNG; seven entries; compiles with latexmk -pdf main.tex, no BibTeX pass, all fonts embedded). Do not upload the master zip or the Lean files here.
 AI provenance files: AI_PROVENANCE_Sl2WeightSystemAtMinus3Over32.md
 License: CC BY 4.0
 
-Data availability (in the paper): LaTeX source, the Lean 4 formalization and the programs archived at Zenodo under doi:10.5281/zenodo.23384025 (release v2.0.0; all versions 10.5281/zenodo.23312529); repository https://github.com/creelie/automatic-memory; the folder preprintSl2WeightSystemAtMinus3Over32 holds the PDF only.
+Data availability (in the paper): LaTeX source, the Lean 4 formalization and the programs in release v2.1.0 of the repository https://github.com/creelie/automatic-memory (https://github.com/creelie/automatic-memory/releases/tag/v2.1.0); the folder preprintSl2WeightSystemAtMinus3Over32 holds the PDF only.
 AI disclosure (in the paper, Data and code availability): Deep Bhattacharjee carried out the computations and the Lean, Julia, C, C++, Python and shell verifications, and the proofs and the text were drafted, with AI assistance (Claude, Anthropic); both authors approved the final version. No separate AI declaration.
 Funding: none. Competing interests: none.
 Device folder: D:\Hexagon\02 Sl2WeightSystemAtMinus3Over32.

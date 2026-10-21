@@ -9,6 +9,9 @@ Lean 4 with Mathlib checks both parts of the theorem (SL2W.main_theorem); it dep
 propext, Classical.choice and Quot.sound. Programs in Python, Julia, C and C++ check the theorem
 and every step of the proof on small cases. This release runs all of them, Lean included.
 
+Journal version for the European Journal of Combinatorics, with the paper also in
+`paper/paper1/` and its LaTeX source zip in `paper/paper2/`.
+
 Files: the paper (`Sl2WeightSystemAtMinus3Over32_final2.pdf`), its LaTeX source with the figures
 as PNG (`Sl2WeightSystemAtMinus3Over32_final2-tex.zip`) and the arXiv tarball
 (`Sl2WeightSystemAtMinus3Over32_final2-arxiv.tar.gz`). The archive of the tag holds the Lean

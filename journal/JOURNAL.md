@@ -25,7 +25,7 @@ arXiv:2607.24217, with a combinatorial formula for the extension.
 
 ## Length and format
 
-- The manuscript is 18 pages in the `elsarticle` preprint layout (12 pt, single
+- The manuscript is 17 pages in the `elsarticle` preprint layout (12 pt, single
   column), with three figures.
 - Elsevier accepts a first submission as a single PDF; after acceptance the
   LaTeX source and the class file are uploaded. The references are in
@@ -39,15 +39,14 @@ arXiv:2607.24217, with a combinatorial formula for the extension.
 - The journal's guide for authors page returned HTTP 403 to the session that
   prepared this file, so any journal-specific page limit or abstract length
   limit was not read; check the guide before submitting.
-- The paper ends with "Data and code availability" (the Zenodo DOI, the link
-  to the PDF, who did what, with the AI assistance named there) and "Ethical
+- The paper ends with "Data and code availability" (the GitHub release v2.1.0
+  that holds the source, the Lean project and the programs, who did what, with the AI assistance named there) and "Ethical
   declarations" (Funding: none. Competing interests: none); Editorial Manager
   asks for the same declarations on the submission form.
-- Three self-citations, each verified on Crossref, in footnotes tied to the
-  places where they bear on the text: 10.9734/arjom/2022/v18i11615
-  (hyperbolic knot groups), 10.20944/preprints202606.1351.v2 (intersection
-  patterns of set families, with Ushashi Bhattacharya) and
-  10.9734/arjom/2022/v18i11607 (non-commutativity).
+- Fee: none on the subscription route; the journal also offers optional gold
+  open access with a charge, which is not needed.
+- The journal version is in `paper/paper1/` (PDF) and `paper/paper2/` (LaTeX
+  source zip); the same files are in `dist/`.
 
 ## Policy on AI assistance (Elsevier generative AI policy for journals)
 
