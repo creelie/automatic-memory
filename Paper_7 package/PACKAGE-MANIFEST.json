@@ -1,0 +1,105 @@
+{
+  "status": "reviewed and compiled package; release DOI pending",
+  "paper_number": 7,
+  "title": "The sl(2) weight system at c = -3/32 extends to a graph 4-invariant",
+  "authors": [
+    {
+      "name": "Deep Bhattacharjee",
+      "orcid": "0000-0003-0466-750X",
+      "email": "itsdeep@live.com",
+      "affiliation": "Formerly, Electro-Gravitational Space Propulsion Laboratory (EGSPL), Bhubaneswar, Odisha 751030, India; Formerly, University of Calcutta, Kolkata 700073, India"
+    },
+    {
+      "name": "Ushashi Bhattacharya",
+      "orcid": "0009-0002-2254-3914",
+      "email": "rai.bhattacharya.in@gmail.com",
+      "affiliation": "Formerly, National Taiwan University, Taipei 106319, Taiwan"
+    }
+  ],
+  "repository": "https://github.com/creelie/automatic-memory",
+  "github_package_directory": "Paper_7 package",
+  "planned_release": "v2.2.0",
+  "journal": "European Journal of Combinatorics",
+  "prior_manuscript_or_source_doi": "10.5281/zenodo.23541142",
+  "new_package_doi": null,
+  "row_or_margin_line_numbers": false,
+  "journal_submission_performed": false,
+  "hexagon_submission_performed": false,
+  "files": [
+    {
+      "path": "AI_PROVENANCE.md",
+      "bytes": 2705,
+      "sha256": "57d4df4c7f966ed2de03b1a477e1ef1be1d95e619f24077125b1ea7cc809407c"
+    },
+    {
+      "path": "aiprovinance.md",
+      "bytes": 2705,
+      "sha256": "57d4df4c7f966ed2de03b1a477e1ef1be1d95e619f24077125b1ea7cc809407c"
+    },
+    {
+      "path": "build-verification.json",
+      "bytes": 997,
+      "sha256": "442e73d05fa8eaa28d1870bf15564c2d78a4f56a3646b607a4267b2b9252d7e0"
+    },
+    {
+      "path": "coverletterjournal.pdf",
+      "bytes": 85560,
+      "sha256": "051902595b96ac07949c3c0c290d388e886a7827550f459eb73121ffeee6868d"
+    },
+    {
+      "path": "coverlettertex.zip",
+      "bytes": 1460,
+      "sha256": "2648350b7b1c60d1babd29be1d0d92cc5217b553997d6b494dbe347c81bb9294"
+    },
+    {
+      "path": "hexagonsubmissionform.md",
+      "bytes": 5301,
+      "sha256": "37351d6acb8ba5745fbd2a1b75c28f176b9ce0b09b72f97e0a4dc41c1534d9e4"
+    },
+    {
+      "path": "journalaideclarationform.pdf",
+      "bytes": 111203,
+      "sha256": "629c5b58e667146e96360a77f4cd8724f82f763228c5c85c58744b48f77fa6b1"
+    },
+    {
+      "path": "journalaideclarationform.tex",
+      "bytes": 2698,
+      "sha256": "b1d654c47cae2c90a9f8f6b0fb3b36398c0f85398c1a960388b01c22b0a5dab3"
+    },
+    {
+      "path": "journalsubmissiondetails.md",
+      "bytes": 4913,
+      "sha256": "6994a619e281d9b149517417390ac575fcacb84ea407d022f19ea7e7386eefcd"
+    },
+    {
+      "path": "proof-audit.json",
+      "bytes": 6782,
+      "sha256": "de526d2c20b7938a094e13a83a5405135e117aa418ff5ef10ce91837b9db9e93"
+    },
+    {
+      "path": "PROOF_REVIEW.md",
+      "bytes": 1784,
+      "sha256": "5ba6256488387b63881e11650add8e8020ac7a89ee0328abe5c7e0cb11422d7b"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1322,
+      "sha256": "9ff0a42dff1fb3b5dcbeae25f2c2367d1518dbe4eb0b04887016ecabcf8b8931"
+    },
+    {
+      "path": "Sl2_weight_system_at_minus_3_over_32_graph_4_invariant.pdf",
+      "bytes": 619140,
+      "sha256": "363459e6d67b6fe1a2311ba2ab48139310ac186f52e20674347155d482b1f84c"
+    },
+    {
+      "path": "Sl2_weight_system_at_minus_3_over_32_graph_4_invarianttex.zip",
+      "bytes": 184051,
+      "sha256": "1ff2c4db9e19d20b8188572c6d6888548b105b486ff84905d9d34433ba1d15b3"
+    },
+    {
+      "path": "submission-metadata.json",
+      "bytes": 5611,
+      "sha256": "60fe42c0400f4bbcbbac2435252a48ea250220035e48b83b4365ac1fdfab443a"
+    }
+  ]
+}

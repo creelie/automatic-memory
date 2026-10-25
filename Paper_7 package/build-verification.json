@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "scope": "Extracted source ZIP compilation and full PDF text/page comparison, not a new proof audit.",
+  "main_document": "main.tex",
+  "compiler": "pdfLaTeX (TeX Live 2023)",
+  "source_zip_members": [
+    "figures/fig_chords.png",
+    "figures/fig_flow.png",
+    "figures/fig_fourterm.png",
+    "main.tex"
+  ],
+  "source_changes": [],
+  "matches_existing_pdf_text_and_pages": true,
+  "pages": 18,
+  "manuscript_pdf_sha256": "363459e6d67b6fe1a2311ba2ab48139310ac186f52e20674347155d482b1f84c",
+  "source_zip_sha256": "1ff2c4db9e19d20b8188572c6d6888548b105b486ff84905d9d34433ba1d15b3",
+  "cover_letter_pages": 1,
+  "ai_declaration_pages": 1,
+  "overfull_boxes": [],
+  "line_numbering_disabled": true,
+  "visual_review_complete": true,
+  "visual_review_scope": "All 18 manuscript pages inspected in rendered contact sheets and both supporting PDFs inspected at full size. No clipped equations, overlapping text or row/margin line numbers.",
+  "no_margin_line_numbers": true
+}

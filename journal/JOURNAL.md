@@ -25,7 +25,7 @@ arXiv:2607.24217, with a combinatorial formula for the extension.
 
 ## Length and format
 
-- The manuscript is 17 pages in the `elsarticle` preprint layout (12 pt, single
+- The manuscript is 18 pages in the `elsarticle` preprint layout (12 pt, single
   column), with three figures.
 - Elsevier accepts a first submission as a single PDF; after acceptance the
   LaTeX source and the class file are uploaded. The references are in
@@ -39,7 +39,7 @@ arXiv:2607.24217, with a combinatorial formula for the extension.
 - The journal's guide for authors page returned HTTP 403 to the session that
   prepared this file, so any journal-specific page limit or abstract length
   limit was not read; check the guide before submitting.
-- The paper ends with "Data and code availability" (the GitHub release v2.1.0
+- The paper ends with "Data and code availability" (the GitHub release v2.2.0
   that holds the source, the Lean project and the programs, who did what, with the AI assistance named there) and "Ethical
   declarations" (Funding: none. Competing interests: none); Editorial Manager
   asks for the same declarations on the submission form.
@@ -63,3 +63,8 @@ arXiv:2607.24217, with a combinatorial formula for the extension.
   its Crossref record (DOI, volume, pages, year) or, for the arXiv preprint,
   against the arXiv source.
 - Source: https://www.elsevier.com/about/policies-and-standards/generative-ai-policies-for-journals
+
+
+## Current upload files (25 October 2026)
+
+Use [Paper_7 package](../Paper_7%20package/README.md). It has the current manuscript, minimal source ZIP, complete Hexagon fields, unsent cover letter and author-prepared AI declaration. The manuscript now has a dedicated AI disclosure section before its references. The source ZIP uses the installed elsarticle class rather than bundling and relicensing the publisher class. New DOI receipts are recorded after the archive is published.

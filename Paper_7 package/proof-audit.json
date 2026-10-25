@@ -1,0 +1,130 @@
+{
+  "status": "PASS",
+  "theorem": "Conjecture 4.1 of arXiv:2607.24217v1",
+  "scope": "Existence of the extension at c=-3/32 on every finite simple graph, agreeing with every chord diagram; no bound on graph size.",
+  "proof_commit": "c1b726362c996ede38c723736417a9e38461d544",
+  "proof_source_tree": "d959f46ea8077f0a3ceee6c51ba19a8b4c376fb2",
+  "lean_version": "4.34.1",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "kernel_endpoints": [
+    "SL2W.main_theorem",
+    "SL2W.ξ_isFourInvariant",
+    "SL2W.ChordDiagram.wsPoly_eval_W",
+    "SL2W.ChordDiagram.lam_half"
+  ],
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "formal_definitions_audited": {
+    "weight_system": "Explicit finite-dimensional E,F,H matrices, Casimir tensor, matrix word and normalized trace. It is not defined using ξ.",
+    "graph_invariant": "Explicit finite signed count of two-element subsets using every colour.",
+    "graph_relation": "Edge toggle and neighbourhood symmetric difference at distinct vertices.",
+    "quantifiers": "Every natural n, chord diagram D and finite graph; no finite search cutoff or unproved hypothesis."
+  },
+  "written_obligations": [
+    {
+      "step": "Polynomial signed count",
+      "argument": "Group assignments by their used colour set. T_k=0 above 2n. Evaluate the resulting finite polynomial at -2."
+    },
+    {
+      "step": "Four-term identity",
+      "argument": "The symmetric-difference involution on labels meeting in one colour pairs the two signed differences for every graph."
+    },
+    {
+      "step": "Weight polynomial",
+      "argument": "Centrality on the universal Verma module, reflection μ↦-2-μ, and infinitely many finite-dimensional quotients give unique w_D."
+    },
+    {
+      "step": "Degree and interpolation",
+      "argument": "Every 2n-letter Verma coefficient has degree at most 2n; reflection halves this to deg w_D≤n. This justifies exact n+1-point interpolation."
+    },
+    {
+      "step": "Faithful oscillator evaluation",
+      "argument": "Falling factorials of distinct degree make Weyl normal forms linearly independent; the two oscillator summands give the same scalar."
+    },
+    {
+      "step": "Bosonic expansion",
+      "argument": "Twisted cyclicity gives Wick recursion. The parity identity on alternating matching cycles supplies each factor -2."
+    },
+    {
+      "step": "Clifford identification",
+      "argument": "Anticommutator Wick expansion gives the matching polynomial; antisymmetrized paired legs yield 4^n S_G(N) for all positive N, hence polynomially at -2."
+    },
+    {
+      "step": "Normalization",
+      "argument": "(-1/32)^n times 4^(-n) times 4^n S_G(-2) equals ξ(G), including the empty diagram."
+    }
+  ],
+  "new_written_lemmas_not_claimed_as_new_Lean_theorems": [
+    "Faithful-action normal-form proof",
+    "Explicit degree bound"
+  ],
+  "finite_checks_are_not_the_universal_proof": true,
+  "original_full_run": {
+    "run": "https://github.com/creelie/automatic-memory/actions/runs/39648676323",
+    "run_id": 39648676323,
+    "head_sha": "c1b726362c996ede38c723736417a9e38461d544",
+    "status": "completed",
+    "conclusion": "success",
+    "jobs": [
+      {
+        "name": "checks",
+        "conclusion": "success",
+        "id": 119390961136
+      },
+      {
+        "name": "release",
+        "conclusion": "success",
+        "id": 119395041489
+      }
+    ],
+    "log_zip_sha256": "df6bc391051be624394a97b214225828c790b7aaee65dab708099cb43fb3fe01",
+    "audit_lines": [
+      "2026-10-21T18:05:22.8576437Z info: Axioms.lean:5:0: 'SL2W.main_theorem' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "2026-10-21T18:05:22.8580379Z info: Axioms.lean:6:0: 'SL2W.ξ_isFourInvariant' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "2026-10-21T18:05:22.8581385Z info: Axioms.lean:7:0: 'SL2W.ChordDiagram.wsPoly_eval_W' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "2026-10-21T18:05:22.8582025Z info: Axioms.lean:8:0: 'SL2W.ChordDiagram.lam_half' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "2026-10-21T18:05:22.8582475Z Build completed successfully (8943 jobs).",
+      "2026-10-21T18:05:22.8652586Z info: Axioms.lean:5:0: 'SL2W.main_theorem' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "2026-10-21T18:05:22.8683748Z no sorry, no admit, no axiom declarations",
+      "2026-10-21T18:06:20.3890513Z PYTHON: all checks passed",
+      "2026-10-21T18:06:23.7699869Z PROOF STEPS: all checks passed",
+      "2026-10-21T18:06:53.0278471Z JULIA: all checks passed",
+      "2026-10-21T18:07:12.9610123Z C: all checks passed",
+      "2026-10-21T18:07:21.1449852Z C++: all checks passed",
+      "2026-10-21T18:07:21.1450777Z All steps passed."
+    ]
+  },
+  "fresh_local_python": {
+    "status": "PASS",
+    "extension_diagrams": 1095,
+    "four_term_instances": 900,
+    "random_relabellings": 30,
+    "proof_step_matching_pairs": 17260,
+    "bosonic_matching_cases": 228,
+    "clifford_diagram_colour_pairs": 140
+  },
+  "lean_files_sha256": {
+    "Axioms.lean": "32fc46e653c54ad13f6bde57dea6773ccee1be608beca93b56ffe5e77e64f2e7",
+    "SL2W/Blocks.lean": "59d4e325b841d7c9775651a05987fd2b254c8c2effe68f47f92ef39466adffe4",
+    "SL2W/Boson.lean": "7251098811fd2a8dfc56c890d32c95e358b25bec306ddf679f02b0eb33a0957d",
+    "SL2W/BosonLabels.lean": "51cc2c63ee64a7caac09bf694ef96a183840fbd933a55ddfb649f2a70d2a9e4e",
+    "SL2W/Central.lean": "f5f86a466a52ba26b75134abbf8fd58e7fdb6c3db816ccbe6a062f548570fe58",
+    "SL2W/Colour.lean": "35b3a6df74253fb8a257f4b33b5fad54cab7fbd3c17511505b5da4e0bdc92e64",
+    "SL2W/Defs.lean": "000310aef52aafbe8615b7068cfe7e0c704a77b35e8cef67ea7f9e7299bda9c8",
+    "SL2W/FourT.lean": "fbd5841527f15939e244292ad86a26821d4a00956837fdcc05fbb95d27b9a9f4",
+    "SL2W/Gauss.lean": "15df03af961e1c81f45adcedc35ffb47bfc1a3dddf49ab57b2c3f38482b31992",
+    "SL2W/Graph.lean": "688d129b553ea76a49d9fd52b71a45739d9eef53b22ecef9e8a640e0a4ac44f0",
+    "SL2W/Labels.lean": "f68fe95d87049f043e9cdaf718cfee56b4613054a58603feddc31565f40ae338",
+    "SL2W/Legs.lean": "ee327f9a595f4f1d9da41878a549e19717c7e667db1b8936785129bf1d22eec4",
+    "SL2W/Main.lean": "364ecd848af6b07aa259e6db6808d789b6b09e7c423a78060bb362fee1bacc57",
+    "SL2W/Osc.lean": "be7b93343b966ce7e428bc716929cb2e87ddc542fed0351e779d5dca2359890d",
+    "SL2W/Trace.lean": "3888df245012c91f508db79d8c2d21b3fbc6dbdb319698dd18c089b4a22635a9",
+    "SL2W/Verma.lean": "51ab4978c337be4176ba10fa5fc91ab4007d675b04862867e120c70fb3a5eefd",
+    "SL2W/Words.lean": "17e131aa0ef1556651ff49756fb4e5c1fe4c06d1a16536d5b1ffca051c1c4e60",
+    "SL2W.lean": "5f8a03f74b11479f850882dc0bbba32894f87c0aa956c460ffb00a1f20acefa2"
+  },
+  "new_independent_solution_date_claimed": false
+}
