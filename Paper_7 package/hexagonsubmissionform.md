@@ -86,3 +86,8 @@ Use pdfLaTeX, main document main.tex. The extracted ZIP was rebuilt locally and
 its full extracted text and page count matched the supplied PDF. Confirm the
 rendered title, abstract, byline, references and final portal preview. This
 packet does not press the portal's Process or Submit button on the author's behalf.
+
+
+Confirmed package archive: https://doi.org/10.5281/zenodo.23630528 .
+Release: https://github.com/creelie/automatic-memory/releases/tag/v2.2.1 .
+The DOI receipt was added after the archived release; see ARCHIVE-DOI.md.

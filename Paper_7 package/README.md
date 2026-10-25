@@ -19,3 +19,8 @@ Manuscript/source archive: https://doi.org/10.5281/zenodo.23541142
 Existing preprint: https://hexagonmath.org/2610.00320v1
 The new package release DOI is recorded only after its public record is
 verified. Package manifests distinguish archive content from later DOI receipts.
+
+
+Confirmed package archive: https://doi.org/10.5281/zenodo.23630528 .
+Release: https://github.com/creelie/automatic-memory/releases/tag/v2.2.1 .
+The DOI receipt was added after the archived release; see ARCHIVE-DOI.md.

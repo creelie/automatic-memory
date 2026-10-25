@@ -57,3 +57,8 @@ current correspondence details, funding/competing interests, figure rights,
 and the journal's current declarations in the live portal. The cover letter
 does not certify exclusivity, financial disclosures, reviewer suggestions or
 signatures that the author has not supplied. Submit to one journal at a time.
+
+
+Confirmed package archive: https://doi.org/10.5281/zenodo.23630528 .
+Release: https://github.com/creelie/automatic-memory/releases/tag/v2.2.1 .
+The DOI receipt was added after the archived release; see ARCHIVE-DOI.md.

@@ -2,7 +2,7 @@
 
 ## Current upload package
 
-[Paper_7 package](Paper_7%20package/README.md) contains the reviewed Hexagon/Overleaf source ZIP, the current PDF, AI provenance, complete Hexagon fields and supporting files for **European Journal of Combinatorics**. The package records the current proof/check scope and has no margin line numbers. No journal submission or acceptance is claimed. Version: 2.2.1.
+[Paper_7 package](Paper_7%20package/README.md) contains the reviewed Hexagon/Overleaf source ZIP, the current PDF, AI provenance, complete Hexagon fields and supporting files for **European Journal of Combinatorics**. The package records the current proof/check scope and has no margin line numbers. No journal submission or acceptance is claimed. Version: 2.2.1. Package DOI: [10.5281/zenodo.23630528](https://doi.org/10.5281/zenodo.23630528).
 
 
 **Deep Bhattacharjee** (corresponding author), Formerly, Electro-Gravitational

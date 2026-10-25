@@ -1,0 +1,44 @@
+{
+  "status": "published-and-archive-verified",
+  "paper": 7,
+  "repo": "automatic-memory",
+  "doi": "10.5281/zenodo.23630528",
+  "doi_url": "https://doi.org/10.5281/zenodo.23630528",
+  "record_id": 23630528,
+  "conceptdoi": "10.5281/zenodo.23312529",
+  "public_api": "https://zenodo.org/api/records/23630528",
+  "version": "2.2.1",
+  "license": {
+    "id": "mit-license"
+  },
+  "creators": [
+    {
+      "name": "Bhattacharjee, Deep",
+      "affiliation": "Formerly, Electro-Gravitational Space Propulsion Laboratory (EGSPL), Bhubaneswar, Odisha 751030, India; Formerly, University of Calcutta, Kolkata 700073, India",
+      "orcid": "0000-0003-0466-750X"
+    },
+    {
+      "name": "Bhattacharya, Ushashi",
+      "affiliation": "Formerly, National Taiwan University, Taipei 106319, Taiwan",
+      "orcid": "0009-0002-2254-3914"
+    }
+  ],
+  "release": "https://github.com/creelie/automatic-memory/releases/tag/v2.2.1",
+  "release_commit": "9f16acd3acad04bef444c278f50b8f3d59ec9367",
+  "package_url": "https://github.com/creelie/automatic-memory/tree/v2.2.1/Paper_7%20package",
+  "package_path": "Paper_7 package",
+  "archival_file": {
+    "id": "74930fe2-258b-46f3-b822-13fe5aa0f870",
+    "key": "creelie/automatic-memory-v2.2.1.zip",
+    "size": 6348461,
+    "checksum": "md5:df689e37a10e6cbfaa74d9fa4fe0bace",
+    "links": {
+      "self": "https://zenodo.org/api/records/23630528/files/creelie/automatic-memory-v2.2.1.zip/content"
+    }
+  },
+  "archive_sha256": "494d311d1076eba35e083b17dd992fd09483a0771b9268d63f4adb04e56b136e",
+  "matching_payloads": 15,
+  "payloads_match_committed_git_and_archived_bytes": true,
+  "verified_at_utc": "2026-10-25T01:10:23.749324+00:00",
+  "journal_submission_performed": false
+}

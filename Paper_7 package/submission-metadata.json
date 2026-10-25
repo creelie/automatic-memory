@@ -78,7 +78,10 @@
   "row_or_margin_line_numbers": false,
   "source_changes_for_upload": [],
   "journal_submission_performed": false,
-  "doi_of_new_package": null,
-  "package_release_pending": true,
-  "package_license": "MIT for original repository code; manuscript preprint under CC BY 4.0; standard TeX classes are external build dependencies."
+  "doi_of_new_package": "10.5281/zenodo.23630528",
+  "package_release_pending": false,
+  "package_license": "MIT for original repository code; manuscript preprint under CC BY 4.0; standard TeX classes are external build dependencies.",
+  "package_release": "https://github.com/creelie/automatic-memory/releases/tag/v2.2.1",
+  "package_release_commit": "9f16acd3acad04bef444c278f50b8f3d59ec9367",
+  "doi_receipt_added_after_publication": true
 }

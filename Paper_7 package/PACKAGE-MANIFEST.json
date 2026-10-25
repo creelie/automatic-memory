@@ -1,5 +1,5 @@
 {
-  "status": "reviewed and compiled package; release DOI pending",
+  "status": "published and checksum-verified package; DOI receipt added after publication",
   "paper_number": 7,
   "title": "The sl(2) weight system at c = -3/32 extends to a graph 4-invariant",
   "authors": [
@@ -21,7 +21,7 @@
   "planned_release": "v2.2.1",
   "journal": "European Journal of Combinatorics",
   "prior_manuscript_or_source_doi": "10.5281/zenodo.23541142",
-  "new_package_doi": null,
+  "new_package_doi": "10.5281/zenodo.23630528",
   "row_or_margin_line_numbers": false,
   "journal_submission_performed": false,
   "hexagon_submission_performed": false,
@@ -35,6 +35,11 @@
       "path": "aiprovinance.md",
       "bytes": 2624,
       "sha256": "801d112701ed320b57c17c7180ef87bab4523b685a64014a967a75ed08789ab0"
+    },
+    {
+      "path": "ARCHIVE-DOI.md",
+      "bytes": 1168,
+      "sha256": "b1e14b7abe2355cef1d4bc56d92547ca7cfe3080b376ca892e1103217ba805e8"
     },
     {
       "path": "build-verification.json",
@@ -53,8 +58,8 @@
     },
     {
       "path": "hexagonsubmissionform.md",
-      "bytes": 5184,
-      "sha256": "d5a0c29356791cdd28cf15249dd867203b61f4cd1c0ba32ff6abcb9ac3458e60"
+      "bytes": 5404,
+      "sha256": "081f44f0dc6950698f5412ba594f1ac2882f8903e5427e004e8fec6c70827b79"
     },
     {
       "path": "journalaideclarationform.pdf",
@@ -68,8 +73,8 @@
     },
     {
       "path": "journalsubmissiondetails.md",
-      "bytes": 4856,
-      "sha256": "ab15d2bf043b1b50cd40f3cdd3c8867cfb7ae1664b18db915c4c719973f72d6b"
+      "bytes": 5076,
+      "sha256": "f39f938777ff94c90511afac1839b95927c2efaa01948985a229dca299705657"
     },
     {
       "path": "proof-audit.json",
@@ -83,8 +88,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 1322,
-      "sha256": "9ff0a42dff1fb3b5dcbeae25f2c2367d1518dbe4eb0b04887016ecabcf8b8931"
+      "bytes": 1542,
+      "sha256": "4a0fb06e052f8cac624fed098138b36db923d40112f22fc908b72cdc0c3ed34b"
+    },
+    {
+      "path": "release-verification.json",
+      "bytes": 1719,
+      "sha256": "618265351911b902fbc8abc07814c03fb957fc93f2fb368a035c93e4555336c1"
     },
     {
       "path": "Sl2_weight_system_at_minus_3_over_32_graph_4_invariant.pdf",
@@ -98,8 +108,13 @@
     },
     {
       "path": "submission-metadata.json",
-      "bytes": 5539,
-      "sha256": "35b8b396e3dcc570d1e4f732d3b4195c6c2ad53a7c2054b96ee93c4069b68e11"
+      "bytes": 5768,
+      "sha256": "eca09d60f03d483fe0acfbd92e5519bea9ce82fcbba29d14e61315040715f5bc"
     }
+  ],
+  "release_commit": "9f16acd3acad04bef444c278f50b8f3d59ec9367",
+  "post_archive_receipt_files": [
+    "release-verification.json",
+    "ARCHIVE-DOI.md"
   ]
 }
