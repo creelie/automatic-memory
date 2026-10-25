@@ -15,8 +15,8 @@ authors:
 type: software
 license: MIT
 repository-code: "https://github.com/creelie/automatic-memory"
-url: "https://github.com/creelie/automatic-memory/releases/tag/v2.2.0"
-version: 2.2.0
+url: "https://github.com/creelie/automatic-memory/releases/tag/v2.2.1"
+version: 2.2.1
 date-released: 2026-10-25
 keywords:
   - weight system

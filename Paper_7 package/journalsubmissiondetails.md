@@ -41,7 +41,7 @@ release-verification.json after Zenodo actually publishes it.
 
 Claude (Anthropic) assisted the original mathematical exploration, proof, text, figures, Lean development and checking code. OpenAI Codex assisted this revision's proof and definition audit, elementary faithful-action argument, literature checks, verification records and submission files. These uses include research and writing assistance. The human authors retain responsibility for the final mathematics and submission decisions.
 
-Recorded human-understanding declaration: Some parts of this contribution, but not all, have been checked and understood by a human.
+The author has stated that all parts are checked and understood by a human.
 This is recorded as the user's declaration, not a substitute for the journal's
 editorial review. The standalone disclosure is provided in addition to the
 manuscript's existing AI section; it does not replace any declaration required

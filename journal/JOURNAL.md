@@ -39,7 +39,7 @@ arXiv:2607.24217, with a combinatorial formula for the extension.
 - The journal's guide for authors page returned HTTP 403 to the session that
   prepared this file, so any journal-specific page limit or abstract length
   limit was not read; check the guide before submitting.
-- The paper ends with "Data and code availability" (the GitHub release v2.2.0
+- The paper ends with "Data and code availability" (the GitHub release v2.2.1
   that holds the source, the Lean project and the programs, who did what, with the AI assistance named there) and "Ethical
   declarations" (Funding: none. Competing interests: none); Editorial Manager
   asks for the same declarations on the submission form.

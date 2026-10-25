@@ -21,7 +21,7 @@
   "repo": "automatic-memory",
   "local_repo": "C:\\CLAUDE PAPERS\\paper7-selection-2026-10-25\\automatic-memory",
   "repo_package_dir": "Paper_7 package",
-  "next_version": "2.2.0",
+  "next_version": "2.2.1",
   "manuscript_doi": "10.5281/zenodo.23541142",
   "preprint": "https://hexagonmath.org/2610.00320v1",
   "primary_subject": "math.CO",
@@ -51,8 +51,8 @@
   "ai_scope": "Claude (Anthropic) assisted the original mathematical exploration, proof, text, figures, Lean development and checking code. OpenAI Codex assisted this revision's proof and definition audit, elementary faithful-action argument, literature checks, verification records and submission files. These uses include research and writing assistance. The human authors retain responsibility for the final mathematics and submission decisions.",
   "formalization_scope": "The universal extension theorem and its matrix-trace definition are formalized in Lean 4.34.1 with pinned Mathlib. At the unchanged proof-source commit, the complete build and four endpoint axiom reports passed with only propext, Classical.choice and Quot.sound. Python exact checks were rerun locally; Julia, C and C++ passed in the archived full run. The grouping proof for part (a) and the added faithful-action lemma are supplied in the written argument; no new formalization of the abstract Weyl algebra is claimed.",
   "formalization_urls": [
-    "https://github.com/creelie/automatic-memory/blob/v2.2.0/lean/SL2W/Main.lean",
-    "https://github.com/creelie/automatic-memory/tree/v2.2.0/lean"
+    "https://github.com/creelie/automatic-memory/blob/v2.2.1/lean/SL2W/Main.lean",
+    "https://github.com/creelie/automatic-memory/tree/v2.2.1/lean"
   ],
   "tools": [
     "Anthropic Claude / Claude Code",
@@ -66,13 +66,13 @@
   "audit_url": "https://github.com/creelie/automatic-memory/actions/runs/39648676323",
   "abstract_tex": "We prove unconditionally the conjecture of Fomichev, Karev, Pavutnitskiy and Usanov that the specialization of the $\\mathfrak{sl}(2)$ weight system at $c=-3/32$ extends to a $4$-invariant of graphs. The extension is $\\xi(G)=(-32)^{-n}S_G(-2)$, where $S_G(N)$ counts with signs the assignments of $2$-element subsets of $\\{1,\\dots,N\\}$ to the $n$ vertices of $G$.",
   "abstract_plain": "We prove unconditionally the conjecture of Fomichev, Karev, Pavutnitskiy and Usanov that the specialization of the mathfraksl(2) weight system at c=-3/32 extends to a 4-invariant of graphs. The extension is xi(G)=(-32)^-nS_G(-2), where S_G(N) counts with signs the assignments of 2-element subsets of 1,dots,N to the n vertices of G.",
-  "human_understanding": "Some parts of this contribution, but not all, have been checked and understood by a human.",
-  "human_understanding_basis": "Retained from the existing Hexagon v1 declaration; the submitting author may update this before submission. The all-parts declaration for Papers 1-6 is not silently extended to Paper 7.",
+  "human_understanding": "All parts of this contribution have been checked and understood by a human.",
+  "human_understanding_basis": "Explicit confirmation by the submitting user for this Paper 7 sl(2) manuscript in this conversation on 25 October 2026.",
   "text_classification": "A mix of human-written and AI-generated",
   "primary_pdf": "Sl2_weight_system_at_minus_3_over_32_graph_4_invariant.pdf",
   "tex_zip": "Sl2_weight_system_at_minus_3_over_32_graph_4_invarianttex.zip",
-  "pdf_sha256": "363459e6d67b6fe1a2311ba2ab48139310ac186f52e20674347155d482b1f84c",
-  "tex_zip_sha256": "1ff2c4db9e19d20b8188572c6d6888548b105b486ff84905d9d34433ba1d15b3",
+  "pdf_sha256": "1b2ae68cb142fd00107dc859b177dad5a67ced0cdb6ad7567d863323e5bcbe51",
+  "tex_zip_sha256": "c70fb09db36fed7c43472622c00ef0685828836348377c7f58caebce8f930b53",
   "pages": 18,
   "hexagon_license": "CC BY 4.0 (manuscript record)",
   "row_or_margin_line_numbers": false,
@@ -80,5 +80,5 @@
   "journal_submission_performed": false,
   "doi_of_new_package": null,
   "package_release_pending": true,
-  "package_license": "MIT for original repository code; article preprint under CC BY 4.0; standard TeX classes are external dependencies."
+  "package_license": "MIT for original repository code; manuscript preprint under CC BY 4.0; standard TeX classes are external build dependencies."
 }

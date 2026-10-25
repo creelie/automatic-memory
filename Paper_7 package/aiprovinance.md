@@ -4,8 +4,8 @@ Human authors: Deep Bhattacharjee; Ushashi Bhattacharya.
 Submitting contributor: Deep Bhattacharjee, ORCID 0000-0003-0466-750X.
 
 Text classification: A mix of human-written and AI-generated.
-Human-understanding declaration: Some parts of this contribution, but not all, have been checked and understood by a human.
-Basis: Retained from the existing Hexagon v1 declaration; the submitting author may update this before submission. The all-parts declaration for Papers 1-6 is not silently extended to Paper 7. This is the submitting user's
+Human-understanding declaration: All parts of this contribution have been checked and understood by a human.
+Basis: Explicit confirmation by the submitting user for this Paper 7 sl(2) manuscript in this conversation on 25 October 2026. This is the submitting user's
 declaration, not a claim that the assistant independently verified human understanding.
 
 Claude (Anthropic) assisted the original mathematical exploration, proof, text, figures, Lean development and checking code. OpenAI Codex assisted this revision's proof and definition audit, elementary faithful-action argument, literature checks, verification records and submission files. These uses include research and writing assistance. The human authors retain responsibility for the final mathematics and submission decisions.

@@ -77,3 +77,5 @@ Yan, Deng and Jin, and is credited to them.
 ## 25 October 2026 revision
 
 The earlier record above describes the original release. The current Paper 7 revision and its additional OpenAI Codex assistance are documented in [Paper_7 package/AI_PROVENANCE.md](Paper_7%20package/AI_PROVENANCE.md). The current 18-page article adds a normal-form proof and degree bound, retains both human authors and cites the exact unchanged Lean proof tree with its verified successful build logs. No new Hexagon version identifier or journal submission is asserted.
+
+The submitting author subsequently confirmed that all parts of Paper 7 have been checked and understood by a human. Version v2.2.1 and its current declaration record that explicit statement.

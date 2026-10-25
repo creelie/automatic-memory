@@ -2,7 +2,7 @@
 
 ## Current upload package
 
-[Paper_7 package](Paper_7%20package/README.md) contains the reviewed Hexagon/Overleaf source ZIP, the current PDF, AI provenance, complete Hexagon fields and supporting files for **European Journal of Combinatorics**. The package records the current proof/check scope and has no margin line numbers. No journal submission or acceptance is claimed. Version: 2.2.0.
+[Paper_7 package](Paper_7%20package/README.md) contains the reviewed Hexagon/Overleaf source ZIP, the current PDF, AI provenance, complete Hexagon fields and supporting files for **European Journal of Combinatorics**. The package records the current proof/check scope and has no margin line numbers. No journal submission or acceptance is claimed. Version: 2.2.1.
 
 
 **Deep Bhattacharjee** (corresponding author), Formerly, Electro-Gravitational
@@ -23,7 +23,7 @@ The paper proves the conjecture of Fomichev, Karev, Pavutnitskiy and Usanov
 > 4-invariant of graphs.
 
 - Paper: [`preprintSl2WeightSystemAtMinus3Over32/Sl2WeightSystemAtMinus3Over32.pdf`](preprintSl2WeightSystemAtMinus3Over32/Sl2WeightSystemAtMinus3Over32.pdf)
-- Release cited by the paper: [v2.2.0](https://github.com/creelie/automatic-memory/releases/tag/v2.2.0) (paper, LaTeX source, Lean 4 formalization and check programs)
+- Release cited by the paper: [v2.2.1](https://github.com/creelie/automatic-memory/releases/tag/v2.2.1) (paper, LaTeX source, Lean 4 formalization and check programs)
 - Journal version: [`paper/paper1/`](paper/paper1/) (PDF) and [`paper/paper2/`](paper/paper2/) (LaTeX source zip)
 - Legacy v2.1.0 master zip (superseded for new submissions by `Paper_7 package`): [`MasterSl2WeightSystemAtMinus3Over32_masterzipfinal2.zip`](https://github.com/creelie/automatic-memory/raw/main/MasterSl2WeightSystemAtMinus3Over32_masterzipfinal2.zip)
 - Target journal: European Journal of Combinatorics (`journal/JOURNAL.md`)
@@ -101,7 +101,7 @@ zip and tar; `figures/make_figures.sh` redraws the figures).
 
 | Release | Link |
 |---|---|
-| v2.2.0 (journal version; cited by the paper) | [https://github.com/creelie/automatic-memory/releases/tag/v2.2.0](https://github.com/creelie/automatic-memory/releases/tag/v2.2.0) |
+| v2.2.1 (journal version; cited by the paper) | [https://github.com/creelie/automatic-memory/releases/tag/v2.2.1](https://github.com/creelie/automatic-memory/releases/tag/v2.2.1) |
 | v2.0.0 | [https://github.com/creelie/automatic-memory/releases/tag/v2.0.0](https://github.com/creelie/automatic-memory/releases/tag/v2.0.0) |
 | v1.0.1 | [https://github.com/creelie/automatic-memory/releases/tag/v1.0.1](https://github.com/creelie/automatic-memory/releases/tag/v1.0.1) |
 | v1.0.0 | [https://github.com/creelie/automatic-memory/releases/tag/v1.0.0](https://github.com/creelie/automatic-memory/releases/tag/v1.0.0) |
@@ -115,3 +115,5 @@ Ushashi Bhattacharya.
 ## Revised proof and verification record
 
 The current 18-page article adds an elementary faithful-action proof and the explicit degree bound behind finite interpolation. [Proof review](verification/paper7/README.md) and [machine-readable audit](verification/paper7/proof-audit.json) distinguish written, formal and finite checks. The complete Lean proof tree is unchanged from the verified successful run. The original Hexagon record is [2610.00320v1](https://hexagonmath.org/2610.00320v1); no replacement identifier is invented.
+
+The submitting author confirmed on 25 October 2026 that all parts of Paper 7 have been checked and understood by a human. The current package records that declaration. Version 2.2.0 was a pre-confirmation archive checkpoint; use v2.2.1 for submission.

@@ -18,7 +18,7 @@
   ],
   "repository": "https://github.com/creelie/automatic-memory",
   "github_package_directory": "Paper_7 package",
-  "planned_release": "v2.2.0",
+  "planned_release": "v2.2.1",
   "journal": "European Journal of Combinatorics",
   "prior_manuscript_or_source_doi": "10.5281/zenodo.23541142",
   "new_package_doi": null,
@@ -28,48 +28,48 @@
   "files": [
     {
       "path": "AI_PROVENANCE.md",
-      "bytes": 2705,
-      "sha256": "57d4df4c7f966ed2de03b1a477e1ef1be1d95e619f24077125b1ea7cc809407c"
+      "bytes": 2624,
+      "sha256": "801d112701ed320b57c17c7180ef87bab4523b685a64014a967a75ed08789ab0"
     },
     {
       "path": "aiprovinance.md",
-      "bytes": 2705,
-      "sha256": "57d4df4c7f966ed2de03b1a477e1ef1be1d95e619f24077125b1ea7cc809407c"
+      "bytes": 2624,
+      "sha256": "801d112701ed320b57c17c7180ef87bab4523b685a64014a967a75ed08789ab0"
     },
     {
       "path": "build-verification.json",
-      "bytes": 997,
-      "sha256": "442e73d05fa8eaa28d1870bf15564c2d78a4f56a3646b607a4267b2b9252d7e0"
+      "bytes": 987,
+      "sha256": "9c69a81e71e4e22fb78c76cea066b0995fca3c8c29b879c64ed0cf9c573b277f"
     },
     {
       "path": "coverletterjournal.pdf",
-      "bytes": 85560,
-      "sha256": "051902595b96ac07949c3c0c290d388e886a7827550f459eb73121ffeee6868d"
+      "bytes": 85532,
+      "sha256": "43d0578b653f4d7ddee54bf9f4cd52422f80686073571697fe332100051da263"
     },
     {
       "path": "coverlettertex.zip",
-      "bytes": 1460,
-      "sha256": "2648350b7b1c60d1babd29be1d0d92cc5217b553997d6b494dbe347c81bb9294"
+      "bytes": 1447,
+      "sha256": "242d5ed86944a23df67d679584c9a2f6aca8ebeb8876c56a4c09d5734e427615"
     },
     {
       "path": "hexagonsubmissionform.md",
-      "bytes": 5301,
-      "sha256": "37351d6acb8ba5745fbd2a1b75c28f176b9ce0b09b72f97e0a4dc41c1534d9e4"
+      "bytes": 5184,
+      "sha256": "d5a0c29356791cdd28cf15249dd867203b61f4cd1c0ba32ff6abcb9ac3458e60"
     },
     {
       "path": "journalaideclarationform.pdf",
-      "bytes": 111203,
-      "sha256": "629c5b58e667146e96360a77f4cd8724f82f763228c5c85c58744b48f77fa6b1"
+      "bytes": 110930,
+      "sha256": "21ba102d68d0a7890d8493ffa9a5f6efa6464cbfdabf5cebd63c3af87961cecc"
     },
     {
       "path": "journalaideclarationform.tex",
-      "bytes": 2698,
-      "sha256": "b1d654c47cae2c90a9f8f6b0fb3b36398c0f85398c1a960388b01c22b0a5dab3"
+      "bytes": 2610,
+      "sha256": "a4e2df4ffb381eb23278550a28443ae547c29b4599ee74badd63bc254a7b1488"
     },
     {
       "path": "journalsubmissiondetails.md",
-      "bytes": 4913,
-      "sha256": "6994a619e281d9b149517417390ac575fcacb84ea407d022f19ea7e7386eefcd"
+      "bytes": 4856,
+      "sha256": "ab15d2bf043b1b50cd40f3cdd3c8867cfb7ae1664b18db915c4c719973f72d6b"
     },
     {
       "path": "proof-audit.json",
@@ -89,17 +89,17 @@
     {
       "path": "Sl2_weight_system_at_minus_3_over_32_graph_4_invariant.pdf",
       "bytes": 619140,
-      "sha256": "363459e6d67b6fe1a2311ba2ab48139310ac186f52e20674347155d482b1f84c"
+      "sha256": "1b2ae68cb142fd00107dc859b177dad5a67ced0cdb6ad7567d863323e5bcbe51"
     },
     {
       "path": "Sl2_weight_system_at_minus_3_over_32_graph_4_invarianttex.zip",
       "bytes": 184051,
-      "sha256": "1ff2c4db9e19d20b8188572c6d6888548b105b486ff84905d9d34433ba1d15b3"
+      "sha256": "c70fb09db36fed7c43472622c00ef0685828836348377c7f58caebce8f930b53"
     },
     {
       "path": "submission-metadata.json",
-      "bytes": 5611,
-      "sha256": "60fe42c0400f4bbcbbac2435252a48ea250220035e48b83b4365ac1fdfab443a"
+      "bytes": 5539,
+      "sha256": "35b8b396e3dcc570d1e4f732d3b4195c6c2ad53a7c2054b96ee93c4069b68e11"
     }
   ]
 }

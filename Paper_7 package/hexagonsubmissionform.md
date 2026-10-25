@@ -38,12 +38,13 @@ The affiliations are former affiliations, not assertions of current employment.
 ## Authorship and understanding selections
 
 Text: A mix of human-written and AI-generated.
-Human understanding: Some parts of this contribution, but not all, have been checked and understood by a human.
-The text classification and human-understanding field follow the existing Paper 7 preprint; review any update before submission.
+Human understanding: All parts of this contribution have been checked and understood by a human.
+The user explicitly supplied both declarations specifically for Paper 7 on 25 October 2026.
 
 ## Provenance statement - copy this paragraph
 
-Claude (Anthropic) assisted the original mathematical exploration, proof, text, figures, Lean development and checking code. OpenAI Codex assisted this revision's proof and definition audit, elementary faithful-action argument, literature checks, verification records and submission files. These uses include research and writing assistance. The human authors retain responsibility for the final mathematics and submission decisions. The recorded human-understanding declaration is: Some parts of this contribution, but not all, have been checked and understood by a human. The human authors retain responsibility for the content.
+Claude (Anthropic) assisted the original mathematical exploration, proof, text, figures, Lean development and checking code. OpenAI Codex assisted this revision's proof and definition audit, elementary faithful-action argument, literature checks, verification records and submission files. These uses include research and writing assistance. The human authors retain responsibility for the final mathematics and submission decisions. The submitting author declares that all parts have been
+checked and understood by a human and takes responsibility for the content.
 The universal extension theorem and its matrix-trace definition are formalized in Lean 4.34.1 with pinned Mathlib. At the unchanged proof-source commit, the complete build and four endpoint axiom reports passed with only propext, Classical.choice and Quot.sound. Python exact checks were rerun locally; Julia, C and C++ passed in the archived full run. The grouping proof for part (a) and the added faithful-action lemma are supplied in the written argument; no new formalization of the abstract Weyl algebra is claimed.
 
 ## Tools used
@@ -61,8 +62,8 @@ tool. Do not invent a model version for an entry that is not documented.
 
 ## Formalisation links
 
-https://github.com/creelie/automatic-memory/blob/v2.2.0/lean/SL2W/Main.lean
-https://github.com/creelie/automatic-memory/tree/v2.2.0/lean
+https://github.com/creelie/automatic-memory/blob/v2.2.1/lean/SL2W/Main.lean
+https://github.com/creelie/automatic-memory/tree/v2.2.1/lean
 
 Scope: The universal extension theorem and its matrix-trace definition are formalized in Lean 4.34.1 with pinned Mathlib. At the unchanged proof-source commit, the complete build and four endpoint axiom reports passed with only propext, Classical.choice and Quot.sound. Python exact checks were rerun locally; Julia, C and C++ passed in the archived full run. The grouping proof for part (a) and the added faithful-action lemma are supplied in the written argument; no new formalization of the abstract Weyl algebra is claimed.
 If the portal rejects a host/path, leave it for manual review rather than
